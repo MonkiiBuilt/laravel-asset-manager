@@ -23,7 +23,6 @@
 
 @section('scripts')
     <script src="<?= asset($dir . '/js/elfinder.min.js') ?>"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
     <script type="text/javascript" charset="utf-8">
         // Documentation for client options:

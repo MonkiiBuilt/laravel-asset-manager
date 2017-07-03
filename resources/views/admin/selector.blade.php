@@ -12,11 +12,10 @@
     <link rel="stylesheet" type="text/css" href="<?= asset($dir.'/css/elfinder.min.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?= asset($dir.'/css/theme.css') ?>">
 
-    <link href="{{ asset('vendor/style/css/main.5.css', env('FORCE_HTTPS', false)) }}" rel="stylesheet" type="text/css">
-
     <script src="<?= asset($dir.'/js/elfinder.min.js') ?>"></script>
 
     <script type="text/javascript" charset="utf-8">
+
         var caller = "<?php echo (isset($_GET['id'])) ? $_GET['id'] : ""; ?>";
 
         var FileBrowserDialogue = {
@@ -37,7 +36,7 @@
                     decURL = parser.pathname;
                     if (decURL.charAt(0) != "/") decURL = "/" + decURL; // for IE. :-\
 
-                    decURL = decURL.replace('files', 'img');
+                    //decURL = decURL.replace('files', 'img');
 
                     //selected image
                     window.parent.assetSelected(caller, decURL);

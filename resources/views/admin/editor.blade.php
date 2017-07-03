@@ -11,8 +11,6 @@
     <link rel="stylesheet" type="text/css" href="<?= asset($dir.'/css/elfinder.min.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?= asset($dir.'/css/theme.css') ?>">
 
-    <link href="{{ asset('vendor/style/css/main.5.css', env('FORCE_HTTPS', false)) }}" rel="stylesheet" type="text/css">
-
     <script src="<?= asset($dir.'/js/elfinder.min.js') ?>"></script>
 
     <!-- elFinder initialization (REQUIRED) -->
