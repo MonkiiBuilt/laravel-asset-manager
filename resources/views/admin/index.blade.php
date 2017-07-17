@@ -11,17 +11,17 @@
 
 @section('title', 'Assets')
 
-@section('styles')
+@push('styles')
     <link rel="stylesheet" type="text/css" href="<?= asset($dir . '/css/elfinder.full.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?= asset($dir . '/css/theme.css') ?>">
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
-@endsection
+@endpush
 
 @section('content')
     <div id="elfinder"></div>
 @endsection
 
-@section('scripts')
+@push('scripts')
     <script src="<?= asset($dir . '/js/elfinder.min.js') ?>"></script>
 
     <script type="text/javascript" charset="utf-8">
@@ -38,4 +38,4 @@
             });
         });
     </script>
-@endsection
+@endpush
