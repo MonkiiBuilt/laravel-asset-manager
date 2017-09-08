@@ -1,15 +1,23 @@
 {
-    "name": "laravel-asset-manager",
-    "version": "0.0.2",
+    "name": "monkiibuilt/laravel-asset-manager",
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.4.*",
         "barryvdh/laravel-elfinder": "^0.3.7",
-        "league/glide": "1.2.2"
+        "league/glide": "^1.2.2"
     },
     "autoload": {
-        "psr-0" : {
-            "MonkiiBuilt\\LaravelAssetManager" : "src/"
+        "psr-4": {
+            "MonkiiBuilt\\LaravelAssetManager\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MonkiiBuilt\\LaravelAssetManager\\ServiceProvider"
+            ]
+        }
+    },
+    "description": "Administrator asset manager",
+    "license": "proprietary"
 }
