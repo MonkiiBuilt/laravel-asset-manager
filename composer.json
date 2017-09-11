@@ -14,7 +14,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "MonkiiBuilt\\LaravelAssetManager\\ServiceProvider"
+                "MonkiiBuilt\\LaravelAssetManager\\ServiceProvider",
+                "Barryvdh\\Elfinder\\ElfinderServiceProvider"
             ]
         }
     },
